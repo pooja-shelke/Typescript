@@ -1,0 +1,37 @@
+# Typescript
+
+
+
+class Demo
+{
+    iValue:number;
+    ans:number;
+
+    constructor(x:number)
+    {
+        this.iValue=x;
+        this.ans=0;
+    }
+
+    EvnNum():void
+    {
+        var i:number;
+        for( i=1;i<=iValue*2;i++)
+        {
+            if(iValue%i==0)
+            {
+                console.log(i);
+            }
+
+        }
+
+
+    }
+
+
+}
+
+var iValue:number=24;
+
+var obj=new Demo(iValue);
+obj.EvnNum();
