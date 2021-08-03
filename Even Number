@@ -1,0 +1,36 @@
+//1.Write a program which accept one number from user and print that number of even numbers on screen.
+
+class Demo
+{
+    iValue:number;
+    ans:number;
+
+    constructor(x:number)
+    {
+        this.iValue=x;
+        this.ans=0;
+    }
+
+    EvnNum():void
+    {
+        var i:number;
+        for( i=1;i<=iValue*2;i++)
+        {
+            if(i%2==0)
+            {
+                console.log(i);
+            }
+
+        }
+
+
+    }
+
+
+}
+
+var iValue:number=7;
+
+var obj=new Demo(iValue);
+obj.EvnNum();
+
